@@ -1,0 +1,21 @@
+$font-stack: 'Lato', sans-serif;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $font-stack;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow: hidden;
+}
