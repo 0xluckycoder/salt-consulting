@@ -17,6 +17,17 @@ body {
   margin: 0 auto;
   overflow: hidden;
 }
+.social-impact .social-impact-heading h1, .portfolio h1, .our-services h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.social-impact .social-impact-heading p, .our-services .service-heading p {
+  color: #575757;
+  padding-top: 0.5rem;
+  text-align: center;
+}
+
 nav {
   position: fixed;
   width: 100%;
@@ -34,7 +45,8 @@ nav .nav-inner .logo {
   align-items: center;
 }
 nav .nav-inner .logo img {
-  max-width: 60px;
+  padding: 0 1rem;
+  width: 90px;
 }
 nav .nav-inner .nav-items {
   display: flex;
@@ -42,6 +54,7 @@ nav .nav-inner .nav-items {
   align-items: center;
 }
 nav .nav-inner .nav-items ul {
+  padding: 0 1rem;
   list-style: none;
   display: flex;
 }
@@ -69,6 +82,7 @@ nav .nav-inner .nav-items ul li span {
   height: 100vh;
 }
 .banner .left-side {
+  padding: 0 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,6 +92,7 @@ nav .nav-inner .nav-items ul li span {
   color: #3E66AE;
 }
 .banner .right-side {
+  padding: 0 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -104,12 +119,15 @@ nav .nav-inner .nav-items ul li span {
 .about {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  column-gap: 4rem;
   text-align: center;
   margin-top: calc(5rem - 50px);
-  padding-bottom: 5rem;
+  padding: 0 1rem 50px 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .about .box-item {
+  width: 300px;
+  margin: 0 auto;
   padding: 4rem 1rem;
   border-radius: 1rem;
   display: flex;
@@ -133,24 +151,18 @@ nav .nav-inner .nav-items ul li span {
 
 .our-services {
   text-align: center;
-  margin-top: calc(5rem - 40px);
+  margin-top: 5rem;
 }
 .our-services .service-heading {
   max-width: 700px;
   margin: auto;
-}
-.our-services .service-heading p {
-  color: #575757;
-}
-.our-services h1 {
-  font-size: 2rem;
-  padding-bottom: 0.5rem;
 }
 .our-services .services {
   padding-top: 1rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   row-gap: 2rem;
+  font-weight: 600;
 }
 .our-services .services img {
   max-width: 100px;
@@ -166,19 +178,88 @@ nav .nav-inner .nav-items ul li span {
   text-align: center;
   margin-top: 5rem;
 }
-.portfolio h1 {
-  padding-bottom: 3rem;
-}
 .portfolio .portfolio-items {
+  margin-top: 3rem;
+  padding: 0 1rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
 }
 .portfolio .portfolio-items .portfolio-item {
-  height: 200px;
-  width: 200px;
   margin: auto;
-  background-color: #E0E0E0;
   border-radius: 8px;
+}
+.portfolio .portfolio-items .portfolio-item img {
+  border-radius: 8px;
+}
+.portfolio .portfolio-items .portfolio-item p {
+  font-weight: 600;
+}
+
+.social-impact {
+  margin-top: 5rem;
+}
+.social-impact .social-impact-heading {
+  max-width: 700px;
+  margin: auto;
+}
+.social-impact .social-impact-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1rem;
+  margin-top: 3rem;
+  padding: 0 1rem 1rem 1rem;
+}
+.social-impact .social-impact-items .social-impact-item {
+  justify-self: center;
+  background: #fff;
+  box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.social-impact .social-impact-items .social-impact-item p {
+  padding-top: 2rem;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+footer {
+  margin-top: 4rem;
+  background: #4A71FF;
+  text-align: center;
+  padding: 3rem 0;
+  color: #fff;
+}
+footer h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+footer .contact {
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 700px;
+  margin: 1rem auto 0 auto;
+}
+
+@media (max-width: 1260px) {
+  .about {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+  }
+  .about .box-item:nth-child(even) {
+    top: 0px;
+  }
+
+  .portfolio .portfolio-items {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /*# sourceMappingURL=/home.5fd3cac8.css.map */
