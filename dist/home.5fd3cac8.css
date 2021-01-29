@@ -48,6 +48,9 @@ nav .nav-inner .logo img {
   padding: 0 1rem;
   width: 90px;
 }
+nav .nav-inner .burger-icon {
+  display: none;
+}
 nav .nav-inner .nav-items {
   display: flex;
   justify-content: center;
@@ -70,6 +73,10 @@ nav .nav-inner .nav-items ul li span {
   padding: 0.5rem 1rem;
   border-radius: 2rem;
   color: #fff;
+}
+
+.mobile-side-nav {
+  display: none;
 }
 
 .banner {
@@ -259,6 +266,122 @@ footer .contact {
 
   .portfolio .portfolio-items {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 1000px) {
+  .banner .banner-inner {
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+  .banner .banner-inner .right-side {
+    display: none;
+  }
+
+  .banner-box {
+    font-size: 1rem;
+  }
+
+  .portfolio .portfolio-items {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .social-impact .social-impact-items {
+    row-gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 700px) {
+  .our-services .services {
+    grid-template-columns: 1fr 1fr;
+  }
+  .our-services .fake-item {
+    display: none;
+  }
+}
+@media (max-width: 650px) {
+  nav .nav-inner {
+    padding: 0.5rem 1rem;
+  }
+  nav .nav-inner .burger-icon {
+    display: block;
+    color: #333;
+    font-size: 3rem;
+    justify-self: right;
+  }
+  nav .nav-inner .nav-items {
+    display: none;
+  }
+
+  .hide-menu {
+    transform: translateX(100%);
+  }
+
+  .show-menu {
+    transform: translateX(0px);
+  }
+
+  .mobile-side-nav {
+    transition: 300ms;
+    display: block;
+    position: fixed;
+    z-index: 2;
+    background: #3E66AE;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+  }
+  .mobile-side-nav .nav-items {
+    position: relative;
+    top: calc(50% - 315px/2);
+    text-align: center;
+  }
+  .mobile-side-nav .nav-items ul li {
+    list-style: none;
+  }
+  .mobile-side-nav .nav-items ul li:not(:first-child) {
+    padding-top: 1rem;
+  }
+  .mobile-side-nav .nav-items ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+  .mobile-side-nav .close-item {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 2rem;
+  }
+
+  .about {
+    grid-template-columns: 1fr;
+  }
+
+  .our-services .service-heading {
+    padding: 0 1rem;
+  }
+
+  .portfolio .portfolio-items {
+    grid-template-columns: 1fr;
+  }
+
+  .social-impact .social-impact-heading {
+    padding: 0 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .banner-box h1 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .banner-box {
+    padding: 1rem 2rem;
+  }
+
+  footer .contact {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
   }
 }
 
