@@ -199,9 +199,6 @@ nav .nav-inner .nav-items ul li span {
 .portfolio .portfolio-items .portfolio-item img {
   border-radius: 8px;
 }
-.portfolio .portfolio-items .portfolio-item p {
-  font-weight: 600;
-}
 
 .social-impact {
   margin-top: 5rem;
@@ -253,6 +250,10 @@ footer .contact {
   grid-template-columns: repeat(3, 1fr);
   max-width: 700px;
   margin: 1rem auto 0 auto;
+}
+footer .contact a {
+  text-decoration: none;
+  color: #fff;
 }
 
 @media (max-width: 1260px) {
@@ -325,7 +326,7 @@ footer .contact {
     display: block;
     position: fixed;
     z-index: 2;
-    background: #3E66AE;
+    background: #3e65aeef;
     color: #fff;
     width: 100%;
     height: 100%;
