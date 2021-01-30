@@ -227,6 +227,12 @@ nav .nav-inner .nav-items ul li span {
   justify-content: center;
   align-items: center;
 }
+.social-impact .social-impact-items .social-impact-item a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #000;
+}
 .social-impact .social-impact-items .social-impact-item p {
   padding-top: 2rem;
   font-weight: 600;

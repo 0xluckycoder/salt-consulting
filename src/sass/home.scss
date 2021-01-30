@@ -261,6 +261,14 @@ nav {
             justify-content: center;
             align-items: center;
 
+            a {
+                margin: 0;
+                padding: 0;
+                text-decoration: none;
+                color: #000;
+            }
+
+
             p {
                 padding-top: 2rem;
                 font-weight: 600;
@@ -339,6 +347,7 @@ footer {
     }
 
     .social-impact {
+
         .social-impact-items {
             row-gap: 2rem;
             grid-template-columns: 1fr;
