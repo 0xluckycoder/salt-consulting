@@ -12,4 +12,4 @@ closeButton.addEventListener('click', (e) => {
     e.preventDefault();
     navElement.classList.remove('show-menu');
     navElement.classList.add('hide-menu');
-})
+});
